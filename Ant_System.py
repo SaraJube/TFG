@@ -1,8 +1,5 @@
-# -*- coding: utf-8 -*-
 """
-Created on Fri Aug 13 19:51:58 2021
-
-@author: Sara
+ANT SYSTEM
 """
 
 
