@@ -96,13 +96,12 @@ class Hormiguero():
             fin = True
             while fin:
                 numero = random.random()
-                acumulacion = 0.0
                 for i in range(len(s)):
-                    probabilidad = s[i][1]/float(total)
-                    if numero <= probabilidad + acumulacion:
-                        fin = False
-                        return s[i][0]
-                    acumulacion += s[i][1]
+                        probabilidad = s[i][1]/float(total)
+                        numero -= probabilidad
+                        if numero <= 0:
+                            fin = False
+                            return s[i][0]
 
 
     
