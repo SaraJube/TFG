@@ -96,14 +96,13 @@ class Hormiguero():
                     total = next_up(total) 
                 fin = True
                 while fin:
-                    toss = random.random()
-                    cummulative = 0.0
+                    numero = random.random()
                     for i in range(len(s)):
-                        peso = s[i][1]/float(total)
-                        if toss <= peso + cummulative:
+                        probabilidad = s[i][1]/float(total)
+                        numero -= probabilidad
+                        if numero <= 0:
                             fin = False
                             return s[i][0]
-                        cummulative += s[i][1]
             else:
                 maximo = 0.0
                 for x in self.destinos:
