@@ -26,7 +26,7 @@ mapa_dis= dic_distancias(m1)
 alpha = 1
 beta = 3
 coef_disipacion = 0.5
-nhormigas= len(m1)
+nhormigas= 10
 feromona_inicial = 8894.9285/ nhormigas
 print(feromona_inicial)
 iteraciones= 1000
